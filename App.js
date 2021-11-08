@@ -6,6 +6,9 @@ export default function App() {
   return (
     <View>
       <Header />
+      <View>
+
+      </View>
     </View>
   )
 }

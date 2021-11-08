@@ -13,14 +13,15 @@ export default function App() {
 
 const styles = StyleSheet.create({
     main: {
-        paddingTop: 50,
+        paddingTop: 60,
         height: 100,
         backgroundColor: 'silver'
     },
     text: {
         fontSize: 18,
         color: 'black',
-        fontWeight: 'bold'
+        fontWeight: 'bold',
+        textAlign: 'center'
     },
     container: {
         flex: 1,
