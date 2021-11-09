@@ -13,8 +13,9 @@ export default function App() {
   ])
 
   /* 
-  Header - заголовок
-  View>FlatList - отображение To-do списка
+  Header - заголовок.
+  Form - форма для ввода новых дел.
+  View>FlatList - отображение To-do списка.
   */
   return (
     <View>
