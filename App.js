@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { StyleSheet, View, FlatList, Text } from 'react-native';
 import Header from './components/Header';
 import ListItem from './components/ListItem';
+import Form from './components/Form';
 
 export default function App() {
   const [listOfItems, setListOfItems] = useState([
@@ -18,6 +19,8 @@ export default function App() {
   return (
     <View>
       <Header />
+
+      <Form />
 
       <View>
         <FlatList data={listOfItems} renderItem={({ item }) => (
