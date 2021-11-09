@@ -27,6 +27,16 @@ export default function App() {
     })
   }
 
+  /*
+  Удаление элементов с фильтром.
+  Возвращение списка тасков с исключенными тасками, у которых совпали ключи.
+  */
+  const deleteHandler = (key) => {
+    setListOfItems((list) => {
+      return list.filter(listOfItems => listOfItems.key != key)
+    })
+  }
+
   /* 
   Header - заголовок.
   Form - форма для ввода новых дел.
@@ -40,7 +50,7 @@ export default function App() {
 
       <View>
         <FlatList data={listOfItems} renderItem={({ item }) => (
-          <ListItem el={item} />
+          <ListItem el={item} deleteHandler={deleteHandler} />
         )} />
       </View>
     </View>
