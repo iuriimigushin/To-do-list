@@ -1,17 +1,13 @@
 import React from 'react';
 import { StyleSheet, Text, TouchableHighlight } from 'react-native';
-import Header from './components/Header';
 
-export default function App() {
-
-
+export default function Header({ el }) {
     return (
-        <View>
-            <Header />
-            <View>
-
-            </View>
-        </View>
+        <TouchableHighlight>
+            <Text style={styles.text}>
+                {el.text}
+            </Text>
+        </TouchableHighlight>
     );
 }
 
