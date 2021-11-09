@@ -1,5 +1,6 @@
 import React from 'react';
 import { StyleSheet, Text, TouchableHighlight } from 'react-native';
+// Компонент вывода элементов To-do списка.
 
 export default function ListItem({ el }) {
     return (
@@ -11,6 +12,7 @@ export default function ListItem({ el }) {
     );
 }
 
+// Стили для рендера списка дел.
 const styles = StyleSheet.create({
     text: {
         padding: 20,

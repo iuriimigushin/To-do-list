@@ -11,9 +11,14 @@ export default function App() {
     { text: 'Дело 4', index: 4 },
   ])
 
+  /* 
+  Header - заголовок
+  View>FlatList - отображение To-do списка
+  */
   return (
     <View>
       <Header />
+
       <View>
         <FlatList data={listOfItems} renderItem={({ item }) => (
           <ListItem el={item} />
