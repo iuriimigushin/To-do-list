@@ -21,7 +21,7 @@ export default function App() {
   const addHandler = (text) => {
     setListOfItems((list) => {
       return [
-        { text: text, key: Math.random().toString(36).substring(16) },
+        { text: text, key: Math.random().toString(36).substring(7) },
         ...list
       ]
     })
