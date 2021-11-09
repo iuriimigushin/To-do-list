@@ -6,16 +6,22 @@ import Form from './components/Form';
 
 export default function App() {
   const [listOfItems, setListOfItems] = useState([
-    { text: 'Дело 1', index: 1 },
-    { text: 'Дело 2', index: 2 },
-    { text: 'Дело 3', index: 3 },
-    { text: 'Дело 4', index: 4 },
+    { text: 'Дело 1', key: '1' },
+    { text: 'Дело 2', key: '2' },
+    { text: 'Дело 3', key: '3' },
+    { text: 'Дело 4', key: '4' },
   ])
 
+  /* 
+  Создание новых тасков.
+  РАЗВИТИЕ: изменить функцию генерации ключа
+  сейчас: геренация ключа через рандомизацию
+  будет: генарацию ключа через инкрементацию индекса ключа (с учетом зацикливания)
+  */
   const addHandler = (text) => {
     setListOfItems((list) => {
       return [
-        { text: text, index: 5 },
+        { text: text, key: Math.random().toString(36).substring(16) },
         ...list
       ]
     })
