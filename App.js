@@ -5,9 +5,9 @@ import Header from './components/Header';
 export default function App() {
   const [listOfItems, setListOfItems] = useState([
     { text: 'Дело 1', index: 1 },
-    { text: 'Дело 2', index: 1 },
-    { text: 'Дело 3', index: 1 },
-    { text: 'Дело 4', index: 1 },
+    { text: 'Дело 2', index: 2 },
+    { text: 'Дело 3', index: 3 },
+    { text: 'Дело 4', index: 4 },
   ])
 
   return (
