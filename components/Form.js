@@ -14,7 +14,7 @@ export default function ListItem({ el }) {
     return (
         <View>
             <TextInput style={styles.input} onChangeText={onChange} placeholder='Впишите задачу' />
-
+            <Button color='#18A558' title='Добавить задачу' />
         </View>
     );
 }
