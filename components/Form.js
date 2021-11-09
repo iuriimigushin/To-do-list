@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { StyleSheet, Text, TextInput, Button, View } from 'react-native';
 // Компонент удаления элементов To-do списка.
 
-export default function ListItem({ el }) {
+export default function Form({ addHandler }) {
     // Функция сохранения введенной задачи
     const [text, setValue] = useState('');
 
@@ -14,7 +14,7 @@ export default function ListItem({ el }) {
     return (
         <View>
             <TextInput style={styles.input} onChangeText={onChange} placeholder='Впишите задачу' />
-            <Button color='#18A558' title='Добавить задачу' />
+            <Button color='#18A558' onPress={() => addHandler(text)} title='Добавить задачу' />
         </View>
     );
 }

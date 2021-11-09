@@ -12,6 +12,15 @@ export default function App() {
     { text: 'Дело 4', index: 4 },
   ])
 
+  const addHandler = (text) => {
+    setListOfItems((list) => {
+      return [
+        { text: text, index: 5 },
+        ...list
+      ]
+    })
+  }
+
   /* 
   Header - заголовок.
   Form - форма для ввода новых дел.
@@ -21,7 +30,7 @@ export default function App() {
     <View>
       <Header />
 
-      <Form />
+      <Form addHandler={addHandler} />
 
       <View>
         <FlatList data={listOfItems} renderItem={({ item }) => (
@@ -33,5 +42,6 @@ export default function App() {
 }
 
 const styles = StyleSheet.create({
+
 
 });
