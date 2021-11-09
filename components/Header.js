@@ -2,7 +2,7 @@ import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 
-export default function App() {
+export default function Header() {
     return (
         <View style={styles.container}>
             <Text style={styles.text}>Список дел</Text>
