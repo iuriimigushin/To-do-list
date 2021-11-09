@@ -2,9 +2,9 @@ import React from 'react';
 import { StyleSheet, Text, TouchableHighlight } from 'react-native';
 // Компонент вывода элементов To-do списка.
 
-export default function ListItem({ el }) {
+export default function ListItem({ el, deleteHandler }) {
     return (
-        <TouchableHighlight>
+        <TouchableHighlight onPress={() => deleteHandler(el.key)}>
             <Text style={styles.text}>
                 {el.text}
             </Text>
