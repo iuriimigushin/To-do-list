@@ -1,7 +1,7 @@
 import React from 'react';
 import { StyleSheet, Text, TouchableHighlight } from 'react-native';
 
-export default function Header({ el }) {
+export default function ListItem({ el }) {
     return (
         <TouchableHighlight>
             <Text style={styles.text}>
